@@ -70,9 +70,7 @@ Component directives wo directives hote hain jo ek complete Angular component ko
 
 Example:
 
-typescript
-Copy
-Edit
+```typescript
 @Component({
   selector: 'app-header',  // This is a component directive
   templateUrl: './header.component.html',
@@ -80,50 +78,49 @@ Edit
 })
 export class HeaderComponent {
   title = 'My Application Header';
-}
-Yahaan @Component directive ko use karke HeaderComponent ko define kiya gaya hai. Is component ka apna ek template aur logic hota hai, jo Angular DOM mein render hoga jab <app-header></app-header> tag use hoga.
+} ```
+Yahaan `@Component` directive ko use karke HeaderComponent ko define kiya gaya hai. Is component ka apna ek template aur logic hota hai, jo Angular DOM mein render hoga jab `<app-header></app-header>` tag use hoga.
 
 2. Structural Directives
-Structural directives woh directives hote hain jo DOM ko change karte hain, yani wo elements ko add ya remove karte hain. Ye directives DOM ka structure modify karte hain, jise hum * se represent karte hain. Yeh conditional rendering aur loops jaise features ko implement karne mein kaam aate hain.
+Structural directives woh directives hote hain jo DOM ko change karte hain, yani wo elements ko add ya remove karte hain. Ye directives DOM ka structure modify karte hain, jise hum ` * ` se represent karte hain. Yeh conditional rendering aur loops jaise features ko implement karne mein kaam aate hain.
 
 Common Examples:
 
-*ngIf: Ye directive kisi element ko condition ke basis par render karta hai.
-*ngFor: Ye directive kisi list ko iterate karne ke liye use hota hai.
+`*ngIf: Ye directive kisi element ko condition ke basis par render karta hai.`
+`*ngFor: Ye directive kisi list ko iterate karne ke liye use hota hai.`
 Example:
 
-html
-Copy
-Edit
-<div *ngIf="isLoggedIn">Welcome, User!</div>
-Yahaan *ngIf structural directive hai jo condition ke according Welcome, User! ko display karega. Agar isLoggedIn variable true hoga, tab ye div display hoga, warna nahi.
+```html
+<div *ngIf="isLoggedIn">Welcome, User!</div>```
+Yahaan `*ngIf` structural directive hai jo condition ke according Welcome, User! ko display karega. Agar isLoggedIn variable true hoga, tab ye div display hoga, warna nahi.
 
-html
-Copy
-Edit
+```html
 <ul>
   <li *ngFor="let item of items">{{ item }}</li>
-</ul>
-Is example mein *ngFor directive items array ke har item ke liye ek <li> element banata hai. Har item ko dynamically HTML mein render kiya jata hai.
+</ul>```
+Is example mein `*ngFor` directive items array ke har item ke liye ek `<li>` element banata hai. Har item ko dynamically HTML mein render kiya jata hai.
 
 3. Attribute Directives
 Attribute directives wo directives hote hain jo kisi element ka behavior ya appearance modify karte hain bina uske structure ko change kiye. Ye directives element ke style, classes, ya attributes ko modify karne ke liye use hote hain.
 
 Common Examples:
 
-ngClass: Ye directive kisi element ke class ko dynamically add/remove karta hai.
-ngStyle: Ye directive kisi element ke inline styles ko dynamically change karta hai.
-ngModel: Ye directive form inputs ko bind karta hai.
+`ngClass: Ye directive kisi element ke class ko dynamically add/remove karta hai.`
+`ngStyle: Ye directive kisi element ke inline styles ko dynamically change karta hai.`
+`ngModel: Ye directive form inputs ko bind karta hai.`
 Example:
 
-html
-Copy
-Edit
-<button [ngClass]="{'btn-primary': isPrimary}">Click me</button>
-Yahaan ngClass attribute directive hai jo button ki class ko dynamically set karta hai. Agar isPrimary true hai, toh button ko btn-primary class milegi.
+```html
+<button [ngClass]="{'btn-primary': isPrimary}">Click me</button>```
+Yahaan `ngClass` attribute directive hai jo button ki class ko dynamically set karta hai. Agar isPrimary true hai, toh button ko btn-primary class milegi.
 
-html
-Copy
-Edit
-<div [ngStyle]="{'color': fontColor}">This text has dynamic color!</div>
-Is example mein ngStyle directive ko use karke text ke color ko dynamically change kiya gaya hai. fontColor variable se color set hota hai.
+```html
+<div [ngStyle]="{'color': fontColor}">This text has dynamic color!</div>```
+Is example mein `ngStyle` directive ko use karke text ke color ko dynamically change kiya gaya hai. fontColor variable se color set hota hai.
+
+Summary:
+Component Directives: Ye ek complete component ko define karte hain jisme logic aur view dono hote hain.
+Structural Directives: Ye DOM structure ko modify karte hain, jaise element ko show ya hide karna ya loops ko handle karna.
+Attribute Directives: Ye kisi element ke behavior ya appearance ko modify karte hain, bina uske structure ko badle.
+In directives ka main kaam Angular ke HTML ko dynamic aur interactive banana hota hai. Wo application ke logic aur views ko Angular ke DOM mein achhe se integrate karte hain, jisse ki hum apne UI ko dynamically modify kar sakein.
+---------------

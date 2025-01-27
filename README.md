@@ -123,9 +123,10 @@ Yahaan `ngClass` attribute directive hai jo button ki class ko dynamically set k
 ```
 Is example mein `ngStyle` directive ko use karke text ke color ko dynamically change kiya gaya hai. fontColor variable se color set hota hai.
 
-*** Summary:
-Component Directives: Ye ek complete component ko define karte hain jisme logic aur view dono hote hain.
-Structural Directives: Ye DOM structure ko modify karte hain, jaise element ko show ya hide karna ya loops ko handle karna.
-Attribute Directives: Ye kisi element ke behavior ya appearance ko modify karte hain, bina uske structure ko badle.
-In directives ka main kaam Angular ke HTML ko dynamic aur interactive banana hota hai. Wo application ke logic aur views ko Angular ke DOM mein achhe se integrate karte hain, jisse ki hum apne UI ko dynamically modify kar sakein.***
+**Component Directives:** Ye ek complete component ko define karte hain jisme logic aur view dono hote hain.\
+**Structural Directives:** Ye DOM structure ko modify karte hain, jaise element ko show ya hide karna ya loops ko handle karna.\
+**Attribute Directives:** Ye kisi element ke behavior ya appearance ko modify karte hain, bina uske structure ko badle.\
+
+In directives ka main kaam Angular ke HTML ko dynamic aur interactive banana hota hai. Wo application ke logic aur views ko Angular ke DOM mein achhe se integrate karte hain, jisse ki hum apne UI ko dynamically modify kar sakein.
+
 ---------------

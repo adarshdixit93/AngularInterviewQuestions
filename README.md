@@ -78,7 +78,7 @@ Example:
 })
 export class HeaderComponent {
   title = 'My Application Header';
-} ```
+}```
 Yahaan `@Component` directive ko use karke HeaderComponent ko define kiya gaya hai. Is component ka apna ek template aur logic hota hai, jo Angular DOM mein render hoga jab `<app-header></app-header>` tag use hoga.
 
 2. Structural Directives

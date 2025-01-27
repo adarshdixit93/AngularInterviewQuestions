@@ -78,7 +78,8 @@ Example:
 })
 export class HeaderComponent {
   title = 'My Application Header';
-}```
+}
+```
 Yahaan `@Component` directive ko use karke HeaderComponent ko define kiya gaya hai. Is component ka apna ek template aur logic hota hai, jo Angular DOM mein render hoga jab `<app-header></app-header>` tag use hoga.
 
 2. Structural Directives
@@ -91,13 +92,15 @@ Common Examples:
 Example:
 
 ```html
-<div *ngIf="isLoggedIn">Welcome, User!</div>```
+<div *ngIf="isLoggedIn">Welcome, User!</div>
+```
 Yahaan `*ngIf` structural directive hai jo condition ke according Welcome, User! ko display karega. Agar isLoggedIn variable true hoga, tab ye div display hoga, warna nahi.
 
 ```html
 <ul>
   <li *ngFor="let item of items">{{ item }}</li>
-</ul>```
+</ul>
+```
 Is example mein `*ngFor` directive items array ke har item ke liye ek `<li>` element banata hai. Har item ko dynamically HTML mein render kiya jata hai.
 
 3. Attribute Directives
@@ -111,11 +114,13 @@ Common Examples:
 Example:
 
 ```html
-<button [ngClass]="{'btn-primary': isPrimary}">Click me</button>```
+<button [ngClass]="{'btn-primary': isPrimary}">Click me</button>
+```
 Yahaan `ngClass` attribute directive hai jo button ki class ko dynamically set karta hai. Agar isPrimary true hai, toh button ko btn-primary class milegi.
 
 ```html
-<div [ngStyle]="{'color': fontColor}">This text has dynamic color!</div>```
+<div [ngStyle]="{'color': fontColor}">This text has dynamic color!</div>
+```
 Is example mein `ngStyle` directive ko use karke text ke color ko dynamically change kiya gaya hai. fontColor variable se color set hota hai.
 
 Summary:

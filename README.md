@@ -87,8 +87,8 @@ Structural directives woh directives hote hain jo DOM ko change karte hain, yani
 
 Common Examples:
 
-`*ngIf: Ye directive kisi element ko condition ke basis par render karta hai.`
-`*ngFor: Ye directive kisi list ko iterate karne ke liye use hota hai.`
+`*ngIf:` Ye directive kisi element ko condition ke basis par render karta hai.
+*ngFor:` Ye directive kisi list ko iterate karne ke liye use hota hai.
 Example:
 
 ```html
@@ -108,9 +108,9 @@ Attribute directives wo directives hote hain jo kisi element ka behavior ya appe
 
 Common Examples:
 
-`ngClass: Ye directive kisi element ke class ko dynamically add/remove karta hai.`
-`ngStyle: Ye directive kisi element ke inline styles ko dynamically change karta hai.`
-`ngModel: Ye directive form inputs ko bind karta hai.`
+`ngClass:` Ye directive kisi element ke class ko dynamically add/remove karta hai.
+`ngStyle:` Ye directive kisi element ke inline styles ko dynamically change karta hai.
+`ngModel:` Ye directive form inputs ko bind karta hai.
 Example:
 
 ```html
@@ -123,9 +123,9 @@ Yahaan `ngClass` attribute directive hai jo button ki class ko dynamically set k
 ```
 Is example mein `ngStyle` directive ko use karke text ke color ko dynamically change kiya gaya hai. fontColor variable se color set hota hai.
 
-Summary:
+*** Summary:
 Component Directives: Ye ek complete component ko define karte hain jisme logic aur view dono hote hain.
 Structural Directives: Ye DOM structure ko modify karte hain, jaise element ko show ya hide karna ya loops ko handle karna.
 Attribute Directives: Ye kisi element ke behavior ya appearance ko modify karte hain, bina uske structure ko badle.
-In directives ka main kaam Angular ke HTML ko dynamic aur interactive banana hota hai. Wo application ke logic aur views ko Angular ke DOM mein achhe se integrate karte hain, jisse ki hum apne UI ko dynamically modify kar sakein.
+In directives ka main kaam Angular ke HTML ko dynamic aur interactive banana hota hai. Wo application ke logic aur views ko Angular ke DOM mein achhe se integrate karte hain, jisse ki hum apne UI ko dynamically modify kar sakein.***
 ---------------

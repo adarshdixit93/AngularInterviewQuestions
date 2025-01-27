@@ -1,6 +1,6 @@
 # AngularInterviewQuestions
-
-### Data binding kya hota hai? Angular kaunsa data binding use karta hai?
+-------------
+### Q1.Data binding kya hota hai? Angular kaunsa data binding use karta hai?
 
 Data binding ek phenomenon hai jo internet users ko Web browser ke madhyam se Web page elements ko manipulate karne ki suvidha deta hai. Isme dynamic HTML ka use hota hai aur complex scripting ya programming ki zarurat nahi hoti. Data binding ka istemal un web pages mein hota hai jo interactive components jaise forms, calculators, tutorials, aur games contain karte hain. Jab web pages mein data kaafi zyada hota hai, tab incremental display ki wajah se data binding kaafi convenient ho jata hai.  
 **Angular two-way binding ka use karta hai.**  
